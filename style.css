@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cover {
+    width: 150px;
+    height: 230px;
+    margin: auto;
+}
+.card_dimension {
+    width: 200px;
+    height: 410px;
+    box-shadow: 1px 1px 25px;
+}
+.ellipsis {
+    display: -webkit-box;
+  -webkit-line-clamp: 1; /* Imposta il numero massimo di righe da visualizzare */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttonCart, .buttonDetails {
+    font-size: 0.65rem;
+    width: 45%;
+    margin: 3px;
+    padding: 10px 2px;
+}
+
+.badge {
+    background-color: red;
+    width: auto;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 45px;
+}
+.newLiRemove {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: none;
+    padding-bottom: 4px;
+}
+
+.newLiImg {
+    width: 20px;
+}
+.card-title {
+    font-weight: bold;
+    height: 50px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform, 0.5s;
+}
+
+.skipButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.664);
+    box-shadow: 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skipButton:hover {
+    background-color: white !important;
+}
+#section {
+    gap: 15px
+}
+
+#buttonOffcanvas {
+    font-size: 2em;
+    padding: 0 10px;
+}
+#svuotaCart {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+
+/* DETTAGLI */
+
+#detailsBody {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+#cardImg {
+    width: 300px;
+}
+#card {
+    border: solid 2px;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 700px;
+}
